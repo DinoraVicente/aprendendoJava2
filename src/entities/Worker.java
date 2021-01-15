@@ -11,6 +11,9 @@ public class Worker {
     private WorkerLevel level;
     private Double baseSalary;
 
+    /*
+    Importa das classes
+     */
     private Department department;
     private List<HourContract> contracts = new ArrayList<>();
 
