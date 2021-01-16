@@ -1,4 +1,4 @@
-package entities;
+package entities.Worker;
 
 public class Department {
     private String name;
