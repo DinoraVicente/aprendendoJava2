@@ -31,6 +31,10 @@ public class Inheritance {
             BusinessAccount acc5 = (BusinessAccount) acc3;
             acc5.loan(500.0);
         }
-
+        if (acc3 instanceof SavingsAccount){
+            SavingsAccount acc5 = (SavingsAccount) acc3;
+            acc5.updateBalance();
+            System.out.println("Update!!");
+        }
     }
 }
