@@ -1,5 +1,9 @@
 package entities.Inheritance;
 
+
+/*
+"Final" em classes evita que a classe seja herdada.
+ */
 public class SavingsAccount extends Account{
     private Double interestRate;
 
@@ -20,8 +24,11 @@ public class SavingsAccount extends Account{
         balance += balance * interestRate;
     }
 
+    /*
+    "Final" no metodo evita que o metodo seja sobreposto.
+     */
     @Override
-    public void withdraw(double amount) {
+    public final void withdraw(double amount) {
         balance -= amount;
     }
 }
