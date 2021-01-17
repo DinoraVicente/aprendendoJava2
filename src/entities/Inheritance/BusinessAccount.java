@@ -21,4 +21,14 @@ public class BusinessAccount extends Account{
            balance += amount - 10;
        }
     }
+
+    /*
+    Utiliza a mesma função que no Account mais o que colocar depois do "super".
+     */
+
+    @Override
+    public void withdraw(double amount) {
+        super.withdraw(amount);
+        balance -= 2.0;
+    }
 }
